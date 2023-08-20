@@ -1,42 +1,41 @@
-import React, { useState } from 'react'
-import Transactions from './Transactions'
-
-function TransactionList({allTransactions}) {
+import React from 'react';
 
 
-  const mappedTransactions = allTransactions.map((oneTransaction) => {
-    return (
-      // this passes the id of the data
-      <Transactions 
-      key={oneTransaction.id} 
-      date={oneTransaction.date}
-      description={oneTransaction.description}
-      category={oneTransaction.category}
-      amount={oneTransaction.amount} />
-    )
-  })
-  //console.log(allTransactions)
-
+function TransactionList({ transactions }) {
   return (
-    <>
+    <div className="transaction-list">
+      <h2>Transaction List</h2>
       <table>
-        {/* head for the table */}
-      <thead>
-          <tr className="table-header">
-            <th className="date">Date</th>
-            <th className="description">Description</th>
-            <th className="category">Category</th>
-            <th className="amount">Amount</th>
-            <th className='button'>Button</th>
-          </tr>
+        <thead>
+         <tr>
+          <td>
+            Date
+          </td>
+          <td>
+            Description
+          </td>
+          <td>
+            Category
+          </td>
+          <td>
+            Amount
+          </td>
+        </tr>   
         </thead>
         <tbody>
-          {/* rendering the mapped transactions */}
-        {mappedTransactions}
-        </tbody>
+        {transactions.map(transaction => (
+          <tr key={transaction.id} className="transaction-item">
+            <td>{transaction.date}</td>
+            <td>{transaction.description}</td>
+            <td>{transaction.category}</td>
+            <td>{transaction.amount}</td>
+          </tr>
+        ))}
+          
+       </tbody>
       </table>
-    </>
-  )
+    </div>
+  );
 }
 
-export default TransactionList
+export default TransactionList;

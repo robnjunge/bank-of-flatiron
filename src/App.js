@@ -1,13 +1,14 @@
+import React, { useState, useEffect } from 'react';
 import Home from './views/Home';
-import React from 'react';
-import './App.css'
-
 
 function App() {
 
+  
+
   return (
-    <div className="App">
-      <Home />
+    <div>
+        <Home />
+
     </div>
   );
 }

@@ -1,8 +1,6 @@
 import React from "react";
 
 function Transactions({ date, description, category, amount }) {
-
-
   return (
     <tr>
       <td>{date}</td>
@@ -10,7 +8,7 @@ function Transactions({ date, description, category, amount }) {
       <td>{category}</td>
       <td>{amount}</td>
       <td>
-        <button type="button"  >Delete</button>
+        <button type="button">Delete</button>
       </td>
     </tr>
   );

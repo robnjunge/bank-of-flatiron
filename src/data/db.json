@@ -99,51 +99,46 @@
       "id": 14
     },
     {
+      
       "date": "2023-01-04",
-      "description": "hair salon",
-      "category": "nails",
-      "amount": "",
-      "amoungt": "1000",
+      "description": "entertainment",
+      "category": "road trip",
+      "amount": 1000,
       "id": 15
     },
     {
       "date": "2023-01-05",
-      "description": "hair salon",
-      "category": "nails",
-      "amount": "",
-      "amoungt": "1000",
+      "description": "barbershop",
+      "category": "hair cut",
+      "amount": 1000,
       "id": 16
     },
     {
       "date": "2023-01-11",
-      "description": "eating",
-      "category": "food",
-      "amount": "",
-      "amoungt": "20000",
+      "description": "entertainment",
+      "category": "watching movies",
+      "amount": 20000,
       "id": 17
     },
     {
       "date": "2023-01-05",
-      "description": "vhb",
+      "description": "Expenses",
       "category": "food",
-      "amount": "",
-      "amoungt": "900",
+      "amount": 900,
       "id": 18
     },
     {
       "date": "",
       "description": "eating",
       "category": "food",
-      "amount": "",
-      "amoungt": "100",
+      "amount": 100,
       "id": 19
     },
     {
       "date": "2023-01-05",
-      "description": "hair salon",
-      "category": "nails",
-      "amount": "",
-      "amoungt": "1000",
+      "description": "barber shop",
+      "category": "hair cut",
+      "amount": 1000,
       "id": 20
     }
   ]
