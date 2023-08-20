@@ -21,7 +21,6 @@ function NewTransactions() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        // creates the post when the data is added it adds the data to the backend ie ..db.json
         fetch('http://localhost:8001/transactions',{
             method: 'POST',
             headers: {
@@ -31,7 +30,6 @@ function NewTransactions() {
             
 
         })
-        // this makes the website to reload after data is passed and the button is clicked
         window.location.reload() 
 
     }
