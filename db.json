@@ -113,13 +113,6 @@
       "id": 16
     },
     {
-      "date": "2023-01-11",
-      "description": "entertainment",
-      "category": "watching movies",
-      "amount": 20000,
-      "id": 17
-    },
-    {
       "date": "2023-01-05",
       "description": "Expenses",
       "category": "food",
@@ -141,90 +134,11 @@
       "id": 20
     },
     {
-      "date": "2023-08-08",
-      "description": "Beauty",
-      "category": "nails and hair",
-      "amount": "",
-      "amoungt": "20000",
+      "date": "2023-08-18",
+      "description": "Entertainment",
+      "category": "Movie night",
+      "amount": "5000",
       "id": 21
-    },
-    {
-      "date": "2023-08-11",
-      "description": "Beauty",
-      "category": "nails and hair",
-      "amount": "",
-      "amoungt": "10000",
-      "id": 22
-    },
-    {
-      "date": "2023-08-10",
-      "description": "Beauty",
-      "category": "nails and hair",
-      "amount": "1000",
-      "id": 23
-    },
-    {
-      "date": "",
-      "description": "",
-      "category": "",
-      "amount": "",
-      "id": 24
-    },
-    {
-      "date": "",
-      "description": "",
-      "category": "",
-      "amount": "",
-      "id": 25
-    },
-    {
-      "date": "",
-      "description": "",
-      "category": "",
-      "amount": "",
-      "id": 26
-    },
-    {
-      "date": "",
-      "description": "",
-      "category": "",
-      "amount": "",
-      "id": 27
-    },
-    {
-      "date": "",
-      "description": "",
-      "category": "",
-      "amount": "",
-      "id": 28
-    },
-    {
-      "date": "",
-      "description": "",
-      "category": "",
-      "amount": "",
-      "id": 29
-    },
-    {
-      "date": "",
-      "description": "",
-      "category": "",
-      "amount": "",
-      "id": 30
-    },
-    {
-      "date": "",
-      "description": "",
-      "category": "",
-      "amount": "",
-      "id": 31
-    },
-    {
-      "date": "",
-      "description": "",
-      "category": "",
-      "amount": "",
-      "id": 32
     }
   ]
 }
