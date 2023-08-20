@@ -20,8 +20,6 @@ function Home() {
   }
 
   function handleDeleteTransaction(transactionId) {
-    // Implement your delete logic here
-    // Update the 'allTransactions' state to remove the transaction with the given 'transactionId'
     const updatedTransactions = allTransactions.filter(transaction => transaction.id !== transactionId);
     setAllTransactions(updatedTransactions);
   }
