@@ -1,6 +1,6 @@
 import React from 'react';
 
-function TransactionList({ transactions }) {
+function TransactionList({ transactions, onDeleteTransaction }) {
   return (
     <div className="transaction-list">
       <h2>Transaction List</h2>
@@ -11,6 +11,7 @@ function TransactionList({ transactions }) {
             <th>Description</th>
             <th>Category</th>
             <th>Amount</th>
+            <th>Action</th>
           </tr>
         </thead>
         <tbody>
@@ -20,6 +21,11 @@ function TransactionList({ transactions }) {
               <td>{transaction.description}</td>
               <td>{transaction.category}</td>
               <td>{transaction.amount}</td>
+              <td>
+                <button onClick={() => onDeleteTransaction(transaction.id)}>
+                  Delete
+                </button>
+              </td>
             </tr>
           ))}
         </tbody>

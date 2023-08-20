@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import NewTransactions from '../components/NewTransactions';
 import TransactionList from '../components/TransactionList'
 
-
 function Home() {
   const [allTransactions, setAllTransactions] = useState([]);
-  const [searchQuery, setSearchQuery] = useState("")
+  const [searchQuery, setSearchQuery] = useState("");
+
   useEffect(() => {
     fetch(`http://localhost:8001/transactions?q=${searchQuery}`)
       .then(response => response.json())
@@ -19,14 +19,21 @@ function Home() {
     setSearchQuery(e.target.value)
   }
 
+  function handleDeleteTransaction(transactionId) {
+    // Implement your delete logic here
+    // Update the 'allTransactions' state to remove the transaction with the given 'transactionId'
+    const updatedTransactions = allTransactions.filter(transaction => transaction.id !== transactionId);
+    setAllTransactions(updatedTransactions);
+  }
+
   return (
     <div>
       <div>
-      <input id = 'input' type="text" placeholder='Search Here...' onChange={handleSearch}/>
-        <button id = 'searchButton'>Search</button>
+        <input id="input" type="text" placeholder="Search Here..." onChange={handleSearch} />
+        <button id="searchButton">Search</button>
       </div>
-      <TransactionList transactions={allTransactions} />
-      <NewTransactions/>
+      <TransactionList transactions={allTransactions} onDeleteTransaction={handleDeleteTransaction} />
+      <NewTransactions />
     </div>
   );
 }
