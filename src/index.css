@@ -1,6 +1,3 @@
-/* Add your global styles here */
-
-/* Add styles for the TransactionList component */
 .transaction-list {
   margin-top: 20px;
 }
@@ -48,3 +45,11 @@ button {
 button:hover {
   background-color: #ff4444;
 }
+
+h1 {
+  font-size: 36px;
+  color: #eb2b0e;
+  margin-bottom: 20px;
+  text-align: center;
+}
+

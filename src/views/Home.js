@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import NewTransactions from '../components/NewTransactions';
 import TransactionList from '../components/TransactionList';
 
+
 function Home() {
   const [allTransactions, setAllTransactions] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
@@ -36,6 +37,7 @@ function Home() {
 
   return (
     <div>
+      <h1 className="welcome-header">Welcome to The Bank of Flatiron</h1>
       <div>
         <input
           id="input"
