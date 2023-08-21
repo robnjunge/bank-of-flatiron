@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+# Bank of Flatiron
+Welcome to the Bank of Flatiron, where you can trust us with all your financial data!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To view in VSCode, right click on the README.md file and select "Open Preview".
 
-## Available Scripts
+## Instructions
+For this project, you’ll be building out a React application that displays a list of your recent bank transactions, among other features.
 
-In the project directory, you can run:
+Part of what this code challenge is testing is your ability to follow given instructions. While you will definitely have a significant amount of freedom in how you implement the features, be sure to carefully read the directions for setting up the application.
 
-### `npm start`
+## Setup
+After unbundling the project:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<li>Run npm install in your terminal.
+Run npm run server. This will run your backend on port 8001.</li>
+<li>In a new terminal, run npm start. This will run your React app on port 8000.
+Make sure to open http://localhost:8001/transactions in the browser to verify that your backend is working before you proceed!
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+If you are unfamiliar with HTML tables, take a look at the docs with an example here</li>
 
-### `npm test`
+## Endpoints
+The base URL for your backend is: http://localhost:8001
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Core Deliverables
+As a user, I should be able to:
+<li>
+See a table of the transactions.<br></li>
+<li>Fill out and submit the form to add a new transaction. This should add the new transaction to the table as well as post the new transaction to the backend API for persistence. <br></li>
+<li>Filter transactions by typing into the search bar. Only transactions with a description matching the search term should be shown in the transactions table.<br> </li>
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Endpoints for Core Deliverables
+<li>GET /transactions<br>
+Example Response:<br>
+`
+[
+  {
+    "id": 1,
+    "date": "2019-12-01",
+    "description": "Paycheck from Bob's Burgers",
+    "category": "Income",
+    "amount": 1000
+  },<br>
+  {
+    "id": 2,
+    "date": "2019-12-01",
+    "description": "South by Southwest Quinoa Bowl at Fresh & Co",
+    "category": "Food",
+    "amount": -10.55
+  }
+]
+`<br></li>
+<li>
+POST /transactions<br>
+Required Headers:<br>
+`
+{
+  "Content-Type": "application/json"
+}`<br></li>
+<li>
+Request Object:<br>
+`
+{
+  "date": "string",
+  "description": "string",
+  "category": "string",
+  "amount": number
+}`<br></li>
+<li>
+Example Response:<br>
+`
+{
+  "id": 1,
+  "date": "2019-12-01",
+  "description": "Paycheck from Bob's Burgers",
+  "category": "Income",
+  "amount": 1000
+}`</li>

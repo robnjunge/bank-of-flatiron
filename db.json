@@ -99,20 +99,6 @@
       "id": 14
     },
     {
-      "date": "2023-01-04",
-      "description": "entertainment",
-      "category": "road trip",
-      "amount": 1000,
-      "id": 15
-    },
-    {
-      "date": "2023-01-05",
-      "description": "barbershop",
-      "category": "hair cut",
-      "amount": 1000,
-      "id": 16
-    },
-    {
       "date": "2023-01-05",
       "description": "Expenses",
       "category": "food",
@@ -120,18 +106,18 @@
       "id": 18
     },
     {
-      "date": "2023-01-05",
-      "description": "barber shop",
-      "category": "hair cut",
-      "amount": 1000,
-      "id": 20
+      "date": "2023-08-15",
+      "description": "Movie night",
+      "category": "Entertainment",
+      "amount": "5000",
+      "id": 23
     },
     {
       "date": "2023-08-18",
-      "description": "Entertainment",
-      "category": "Movie night",
-      "amount": "5000",
-      "id": 21
+      "description": "Haircut",
+      "category": "Barbershop",
+      "amount": "1000",
+      "id": 24
     }
   ]
 }
