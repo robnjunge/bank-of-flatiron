@@ -11,7 +11,7 @@ Part of what this code challenge is testing is your ability to follow given inst
 ## Setup
 After unbundling the project:
 <li>You can open the site using this deploy link https://dulcet-vacherin-5f9977.netlify.app in the browser.</li>
-<li>Fork and clone this repository <strong>git@github.com:robnjunge/bank-of-flatiron.git<strong>in to your computer</li>
+<li>Fork and clone this repository <strong>git@github.com:robnjunge/bank-of-flatiron.git<strong> in to your computer</li>
  <li>Open the project-folder using VS code.
 <li>Then run npm install in your terminal.
 Run npm run server. This will run your backend on port 8001.</li>
