@@ -11,7 +11,8 @@ Part of what this code challenge is testing is your ability to follow given inst
 ## Setup
 After unbundling the project:
 <li>You can open the site using this deploy link https://dulcet-vacherin-5f9977.netlify.app in the browser.</li>
-<li>You can also use this github link https://github.com/robnjunge/bank-of-flatiron to open the bank of flatiron repository 
+<li>Fork and clone this repository *git@github.com:robnjunge/bank-of-flatiron.git*in to your computer</li>
+ <li>Open the project-folder using VS code.
 <li>Then run npm install in your terminal.
 Run npm run server. This will run your backend on port 8001.</li>
 <li>In a new terminal, run npm start. This will run your React app on port 8000.
@@ -77,3 +78,10 @@ Example Response:<br>
   "category": "Income",
   "amount": 1000
 }`</li>
+
+## LICENSE
+ MIT License
+
+
+## AUTHOR
+Robert Njung'e
