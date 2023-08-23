@@ -2,18 +2,15 @@ import React, {useState} from 'react'
 
 function NewTransactions() {
 
-    // declaring state 
     const [isClicked, setIsClicked] = useState({
         date:"",
         description:"",
         category:"",
         amount:""
     })
-    // function that handles the change in the inputs
        const handleChange = (e) => {
         console.log(e.target.value)
         setIsClicked({
-            // spread operator to copy the data then targtting the value
             ...isClicked,
             [e.target.name] : e.target.value,   
         })
@@ -36,7 +33,6 @@ function NewTransactions() {
 
 
   return (
-    // input section for adding a new transactions
     <form onSubmit={handleSubmit} className = "forminput">
         <input id = "inputtransaction" name='date' type="date" onChange={handleChange}  />
         <input id = "inputtransaction" type="text" name='description' placeholder='Description' onChange={handleChange} />
