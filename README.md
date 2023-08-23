@@ -10,8 +10,9 @@ Part of what this code challenge is testing is your ability to follow given inst
 
 ## Setup
 After unbundling the project:
-
-<li>Run npm install in your terminal.
+<li>You can open the site using this deploy link https://dulcet-vacherin-5f9977.netlify.app in the browser.</li>
+<li>You can also use this github link https://github.com/robnjunge/bank-of-flatiron to open the bank of flatiron repository 
+<li>Then run npm install in your terminal.
 Run npm run server. This will run your backend on port 8001.</li>
 <li>In a new terminal, run npm start. This will run your React app on port 8000.
 Make sure to open http://localhost:8001/transactions in the browser to verify that your backend is working before you proceed!
