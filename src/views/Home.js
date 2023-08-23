@@ -8,7 +8,7 @@ function Home() {
   const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
-    fetch(`http://localhost:8001/transactions?q=${searchQuery}`)
+    fetch(`https://database-uiav.onrender.com/transactions?q=${searchQuery}`)
       .then(response => response.json())
       .then(data => {
         console.log(data);
@@ -23,7 +23,7 @@ function Home() {
 
   async function handleDeleteTransaction(transactionId) {
     try {
-      await fetch(`http://localhost:8001/transactions/${transactionId}`, {
+      await fetch(`https://database-uiav.onrender.com/transactions/${transactionId}`, {
         method: 'DELETE',
       });
 

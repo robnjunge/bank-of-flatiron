@@ -10,26 +10,34 @@ function NewTransactions() {
     })
        const handleChange = (e) => {
         console.log(e.target.value)
-        setIsClicked({
+        console.log(setIsClicked({
             ...isClicked,
             [e.target.name] : e.target.value,   
-        })
+        }))
     }
 
-    const handleSubmit = (e) => {
-        e.preventDefault()
-        fetch('http://localhost:8001/transactions',{
+        const handleSubmit = (e) => {
+             e.preventDefault();
+            fetch('https://database-uiav.onrender.com/transactions', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(isClicked),
-            
-
         })
-        window.location.reload() 
-
-    }
+        .then(response => response.json()) 
+        .then(data => {
+            setIsClicked({
+                ...isClicked,
+                date: data.date,
+                description: data.description,
+                category: data.category,
+                amount: data.amount
+            });
+            window.location.reload()
+        })
+       
+    };
 
 
   return (
@@ -38,7 +46,7 @@ function NewTransactions() {
         <input id = "inputtransaction" type="text" name='description' placeholder='Description' onChange={handleChange} />
         <input id="type" placeholder= "Category" name='category' onChange = {handleChange} />
         <input id = "inputtransaction" type="number" name='amount' placeholder='Amount' onChange={handleChange}  />
-        <button id = "newtransactions" type="submit" onSubmit={handleSubmit}>New Transaction</button>
+        <button id = "newtransactions" type="submit" >New Transaction</button>
     </form>
   )
 }
