@@ -8,10 +8,11 @@ For this project, you’ll be building out a React application that displays a l
 
 Part of what this code challenge is testing is your ability to follow given instructions. While you will definitely have a significant amount of freedom in how you implement the features, be sure to carefully read the directions for setting up the application.
 
+
 ## Setup
-After unbundling the project:
+<strong>Use <a href = https://dulcet-vacherin-5f9977.netlify.app>this </a> to get the deployed site</strong>
 <li>You can open the site using this deploy link https://dulcet-vacherin-5f9977.netlify.app in the browser.</li>
-<li>Fork and clone this repository <strong>git@github.com:robnjunge/bank-of-flatiron.git</strong> in to your computer </li>
+<li>You can also fork and clone this repository <strong>git@github.com:robnjunge/bank-of-flatiron.git</strong> in to your computer </li>
  <li>Open the project-folder using VS code.
 <li>Then run npm install in your terminal.
 Run npm run server. This will run your backend on port 8001.</li>
