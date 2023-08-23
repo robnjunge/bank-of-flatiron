@@ -14,15 +14,7 @@ Part of what this code challenge is testing is your ability to follow given inst
 Use <a href = https://dulcet-vacherin-5f9977.netlify.app>this </a> to get the deployed site
 <li>You can also fork and clone this repository <strong>git@github.com:robnjunge/bank-of-flatiron.git</strong> in to your computer </li>
  <li>Open the project-folder using VS code.
-<li>Then run npm install in your terminal.
-Run npm run server. This will run your backend on port 8001.</li>
-<li>In a new terminal, run npm start. This will run your React app on port 8000.
-Make sure to open http://localhost:8001/transactions in the browser to verify that your backend is working before you proceed!
-
-If you are unfamiliar with HTML tables, take a look at the docs with an example here</li>
-
-## Endpoints
-The base URL for your backend is: http://localhost:8001
+<li>Then run npm start in your terminal to open the react app in your browser</li>
 
 ## Core Deliverables
 As a user, I should be able to:
